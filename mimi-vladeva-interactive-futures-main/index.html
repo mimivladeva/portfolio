@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimi Vladeva | Portfolio</title>
+  <meta name="description" content="Portfolio de Mimi Vladeva - Desarrolladora Web, Apps Android y Robótica">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">MV.</a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about"    class="nav-link" data-i18n="nav_about">Sobre mí</a></li>
+      <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Proyectos</a></li>
+      <li><a href="#contact"  class="nav-link" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-selector">
+        <button class="lang-btn active">ES</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn">EN</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn">BG</button>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/mimivladeva" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mimi-vladeva-a17080353/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="floating-elements">
+      <div class="float-element float-1"></div>
+      <div class="float-element float-2"></div>
+      <div class="float-element float-3"></div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span data-i18n="badge_web">WEB</span>
+      <span class="badge-dot"></span>
+      <span data-i18n="badge_android">ANDROID</span>
+      <span class="badge-dot"></span>
+      <span data-i18n="badge_robotics">ROBOTICS</span>
+    </div>
+    <h1 class="hero-title" data-i18n="hero_title">Construyo sistemas donde software y hardware trabajan juntos</h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">
+      Desarrollo web, apps Android y robótica con ROS2 enfocada en soluciones reales
+    </p>
+    <a href="#contact" class="hero-cta">
+      <span data-i18n="hero_cta">CONTACTAR</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
+  </div>
+  <div class="scroll-indicator">
+    <div class="mouse"><div class="wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="about_tag">Sobre mí</span>
+      <h2 class="section-title" data-i18n="about_title">Conectando código con el mundo real</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p data-i18n="about_p1">
+          Soy estudiante de último año de <strong>Tecnologías Interactivas</strong> en la UPV Gandía.
+          Mi enfoque está en crear soluciones reales que conectan software con hardware, desde aplicaciones web y móviles hasta sistemas robóticos inteligentes.
+        </p>
+        <p data-i18n="about_p2">
+          He participado en el desarrollo de <strong>más de 8 proyectos</strong>, trabajando en equipo utilizando
+          <strong>Git y GitHub</strong> para control de versiones y colaboración en entornos reales de desarrollo.
+        </p>
+        <p data-i18n="about_p3">
+          Me especializo en desarrollo frontend, aplicaciones Android, integración de sensores con ROS2,
+          y desarrollo de sistemas interactivos combinando robótica y software.
+        </p>
+      </div>
+
+      <section class="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat">
+              <h3 class="stat-number" data-target="13">0</h3>
+              <p data-i18n="stat_projects">Proyectos desarrollados</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat-number" data-target="4">0</h3>
+              <p data-i18n="stat_years">Años de experiencia académica</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat-number" data-target="8">0</h3>
+              <p data-i18n="stat_team">Proyectos en equipo</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat-number">24/7</h3>
+              <p data-i18n="stat_learning">Aprendizaje continuo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="about-cards">
+        <div class="about-card" data-delay="0">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 data-i18n="card_web_title">Web Development</h3>
+          <p data-i18n="card_web_desc">Interfaces modernas y responsivas con las últimas tecnologías frontend</p>
+        </div>
+        <div class="about-card" data-delay="100">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 data-i18n="card_android_title">Android Apps</h3>
+          <p data-i18n="card_android_desc">Aplicaciones nativas con Android Studio y conectividad cloud</p>
+        </div>
+        <div class="about-card" data-delay="200">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="card_robotics_title">Robotics & Sensors</h3>
+          <p data-i18n="card_robotics_desc">Sistemas robóticos con ROS2, Arduino y sensores inteligentes</p>
+        </div>
+        <div class="about-card" data-delay="300">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3 data-i18n="card_unity_title">Unity / Interactive</h3>
+          <p data-i18n="card_unity_desc">Experiencias interactivas y videojuegos con Unity y C#</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Section -->
+<section class="workflow">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="workflow_tag">Metodología</span>
+      <h2 class="section-title" data-i18n="workflow_title">Cómo trabajo</h2>
+    </div>
+    <ul class="workflow-list">
+      <li data-i18n="workflow_1">Desarrollo de proyectos completos de principio a fin</li>
+      <li data-i18n="workflow_2">Trabajo en equipo con Git y GitHub (ramas, commits, merges)</li>
+      <li data-i18n="workflow_3">Integración de software con hardware y sensores</li>
+      <li data-i18n="workflow_4">Uso de metodologías ágiles (Scrum)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="skills_tag">Skills</span>
+      <h2 class="section-title" data-i18n="skills_title">Tecnologías que domino</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3 class="skill-category-title">Web</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Android</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">Android Studio</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Databases</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">Firebase</span>
+          <span class="skill-badge">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Robotics</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">ROS2</span>
+          <span class="skill-badge">TurtleBot3</span>
+          <span class="skill-badge">Arduino</span>
+          <span class="skill-badge">Raspberry Pi</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Programming</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">C</span>
+          <span class="skill-badge">C++</span>
+          <span class="skill-badge">MATLAB</span>
+          <span class="skill-badge">Unity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="projects_tag">Proyectos</span>
+      <h2 class="section-title" data-i18n="projects_title">Trabajos destacados</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card" data-delay="0">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">VG Detailing</h3>
+          <p data-i18n="project1_desc">
+            Desarrollo completo de una web real desde cero (diseño, frontend y lógica),
+            incluyendo sistema de citas automatizado, optimización UX y enfoque en conversión de clientes.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://vgdetailing.com/" target="_blank" rel="noopener" class="project-link primary">
+              <span data-i18n="project_view">Ver proyecto</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-delay="100">
+        <div class="project-image">
+          <div class="project-placeholder robotics">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <rect x="9" y="9" width="6" height="6"/>
+              <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+              <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+              <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+              <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">TFG — Robot con ESP32 y Sensor 6DOF</h3>
+          <p class="project-description" data-i18n="project2_desc">Sistema robótico basado en TurtleBot3 conectado a ESP32 y sensor 6DOF. Detección de intención del usuario y comunicación en tiempo real.</p>
+          <div class="project-tech">
+            <span>ROS2 Jazzy</span><span>Arduino</span><span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/mimivladeva/tfg_mimi_2026" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-delay="200">
+        <div class="project-image">
+          <div class="project-placeholder ai">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Zyndra — Robot guía</h3>
+          <p class="project-description" data-i18n="project3_desc">Robot TurtleBot3 con navegación autónoma conectado a una web con IA para seguimiento. Demo de perro robot guía para personas invidentes.</p>
+          <div class="project-tech">
+            <span>ROS2</span><span>Python</span><span>Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vjrivmon/aidguide_04" target="_blank" rel="noopener" class="project-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Chat Bubble -->
+<div class="chat-bubble" id="chat-bubble">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+    <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+  </svg>
+</div>
+
+<!-- Chat Window -->
+<div class="chat-popup" id="chat-popup">
+  <div class="chat-header">
+    <span>MimiAI</span>
+    <button id="close-chat">✕</button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="chat-message bot">
+      <div class="message-content">
+        <p data-i18n="chat_greeting">Hola, soy el asistente de Mimi. ¿Qué quieres saber?</p>
+      </div>
+    </div>
+  </div>
+  <form class="chat-input-form" id="chat-form">
+    <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Escribe..." />
+    <button type="submit">➤</button>
+  </form>
+</div>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="contact_tag">Contacto</span>
+      <h2 class="section-title" data-i18n="contact_title">Trabajemos juntos</h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p class="contact-text" data-i18n="contact_text">¿Tienes un proyecto en mente? Me encantaría escucharte. Contacta conmigo y hablemos sobre cómo puedo ayudarte.</p>
+        <div class="contact-details">
+          <a href="mailto:vladevamimi@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <span class="contact-label" data-i18n="contact_email_label">Email</span>
+              <span class="contact-value">vladevamimi@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/mimivladeva" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <span class="contact-label" data-i18n="contact_github_label">GitHub</span>
+              <span class="contact-value">github.com/mimivladeva</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/mimi-vladeva-a17080353/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <span class="contact-label" data-i18n="contact_linkedin_label">LinkedIn</span>
+              <span class="contact-value">Mimi Vladeva</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name" data-i18n="form_name">Nombre</label>
+          <input type="text" id="name" name="name" required data-i18n-placeholder="form_name_placeholder" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="form_email">Email</label>
+          <input type="email" id="email" name="email" required data-i18n-placeholder="form_email_placeholder" placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="form_message">Mensaje</label>
+          <textarea id="message" name="message" required data-i18n-placeholder="form_message_placeholder" placeholder="Cuéntame sobre tu proyecto..." rows="5"></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <span data-i18n="form_submit">Enviar mensaje</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">MV.</a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Built with creativity, code and interactive systems.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about"    data-i18n="nav_about">Sobre mí</a>
+        <a href="#skills"   data-i18n="skills_tag">Skills</a>
+        <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+        <a href="#contact"  data-i18n="nav_contact">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://github.com/mimivladeva" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mimi-vladeva-a17080353/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_copy">&copy; 2024 Mimi Vladeva. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init("tpNS8ZXpw5MjyNcqX"); })();
+</script>
+<script src="script.js"></script>
+<script src="translations.js"></script>
+
+</body>
+</html>
